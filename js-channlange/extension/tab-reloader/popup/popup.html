@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Tab reloader - Sabbir Hossain</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="container">
+        <!-- header logo -->
+        <div class="logo">
+          <img src="../icon/img.png" alt="icon" />
+        </div>
+        <!-- extension title -->
+        <div class="title">
+          <h1>Tab Reloader</h1>
+        </div>
+        <!-- extension on off toggle -->
+        <div class="toggle">toggle</div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <!-- container body -->
+      <div class="container__body">
+        <form id="onSubmiteFrom">
+          <!-- all input fild and button here -->
+          <div class="all__input__button">
+            <h2>Reload Interval</h2>
+            <div class="input__group">
+              <div class="minute__input">
+                <input type="number" class="input minute" id="minute" />
+                <p>Minutes</p>
+              </div>
+              <div class="second__input">
+                <input type="number" class="input second" id="second" />
+                <p>Seconds</p>
+              </div>
+              <div class="interval__remove__button">
+                <button type="button" class="btn" id="interval__remove__button">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- all input fild and button here end -->
+          <!-- custom defalt sortcut value adding -->
+          <div class="default__value">
+            <div class="left">
+              <div class="5__second second">
+                <input
+                  type="radio"
+                  id="5_second"
+                  value="5"
+                  class="radio"
+                  name="5_second"
+                />
+                <label for="5_second">5 second</label>
+              </div>
+              <div class="5__second second">
+                <input
+                  type="radio"
+                  id="15_second"
+                  value="15"
+                  class="radio"
+                  name="15_second"
+                />
+                <label for="15_second">15 second</label>
+              </div>
+            </div>
+            <div class="right">
+              <div class="5__second second">
+                <input
+                  type="radio"
+                  value="2"
+                  id="2_minute"
+                  class="radio"
+                  name="2_minute"
+                />
+                <label for="2_minute">2 minute</label>
+              </div>
+              <div class="5__second second">
+                <input
+                  type="radio"
+                  id="4_minute"
+                  class="radio"
+                  value="4"
+                  name="4_minute"
+                />
+                <label for="4_minute">4 minute</label>
+              </div>
+            </div>
+          </div>
+          <!-- custom defalt sortcut value adding (end) -->
+          <!-- submit button -->
+          <div class="enter__button">
+            <button type="submit" id="start__btn">start auto reload</button>
+          </div>
+          <!-- submit button end -->
+        </form>
+      </div>
+    </main>
+    <!-- main end -->
+    <script src="popup.js"></script>
+  </body>
+</html>
