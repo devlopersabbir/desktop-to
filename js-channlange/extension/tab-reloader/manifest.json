@@ -1,0 +1,30 @@
+{
+  "name": "Tab reloader - Sabbir Hossain",
+  "description": "Auto tab reloader created by developer sabbirx",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "/popup/popup.html",
+    "default_title": "Tab reloader",
+    "default_icon": {
+      "16": "/icon/img.png",
+      "24": "/icon/img.png",
+      "32": "/icon/img.png"
+    }
+  },
+  "content_scripts": [
+    { "js": ["/content/content.js"], "matches": ["<all_urls>"] }
+  ],
+  "icons": {
+    "128": "/icon/img.png",
+    "16": "/icon/img.png",
+    "256": "/icon/img.png",
+    "48": "/icon/img.png"
+  },
+  "background": {
+    "service_worker": "/background/background.js",
+    "type": "module"
+  },
+  "permissions": ["tabs", "storage"],
+  "options_page": "/option/option.html"
+}

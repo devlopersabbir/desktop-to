@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 0.2rem 0.4rem;
+  background: #e74c3c;
+  box-shadow: 0px 1px 15px 1px rgba(115, 115, 115, 0.6901960784);
+  margin-bottom: 12px;
+}
+
+.container {
+  width: 380px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.container .logo {
+  width: 50px;
+}
+.container .logo img {
+  width: 100%;
+  height: auto;
+}
+.container .title {
+  font-size: 16px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main {
+  width: 380px;
+  padding: 0.3rem 0.7rem;
+  height: auto;
+}
+main .container__body .all__input__button h2 {
+  font-size: 16px;
+  padding: 0.5rem 0rem;
+  color: #e74c3c;
+}
+main .container__body .all__input__button .input__group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+main .container__body .all__input__button .input__group .minute__input,
+main .container__body .all__input__button .input__group .second__input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 16px;
+  text-align: center;
+}
+main .container__body .all__input__button .input__group .minute__input .input,
+main .container__body .all__input__button .input__group .second__input .input {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 0.2rem;
+  background: transparent;
+  padding: 0.5rem;
+  width: 123px;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+}
+main .container__body .all__input__button .input__group .interval__remove__button .btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  background: #e74c3c;
+  padding: 0.5rem 1.2rem;
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+main .container__body .all__input__button .input__group .interval__remove__button .btn:hover {
+  background: #f1948a;
+  color: rgb(0, 0, 0);
+}
+main .container__body .default__value {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.7rem 0;
+}
+main .container__body .default__value .left,
+main .container__body .default__value .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .container__body .default__value .second {
+  width: 100%;
+  display: flex;
+  gap: 0.7rem;
+  font-size: medium;
+  color: #e74c3c;
+  font-weight: bold;
+}
+main .container__body .enter__button button {
+  width: 100%;
+  height: auto;
+  padding: 0.6rem 1rem;
+  font-size: 18px;
+  background: #e74c3c;
+  margin: 1rem 0rem;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}/*# sourceMappingURL=popup.css.map */
